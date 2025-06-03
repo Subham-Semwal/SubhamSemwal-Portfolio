@@ -1,0 +1,242 @@
+/* General body styling */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fdfefe;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  background-attachment: fixed;
+}
+
+/* Navbar customization */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: #fff !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: #ddd !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.15);
+}
+
+/* Hero Section */
+/* Hero Section with Background Image */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("./images/hero.jpg"); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+/* Overlay to darken image */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Text content inside hero */
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px; /* keep small horizontal padding */
+  margin-top: 200px; /* pushes text down by 80px */
+}
+
+.text-highlight {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+section.bg-light.text-center {
+  background: linear-gradient(to right, #e3f2fd, #fff);
+}
+
+/* about section */
+.about-section {
+  background: linear-gradient(135deg, #ffffff, #eaf6ff);
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  border-radius: 12px;
+  padding: 50px 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  color: #0d6efd;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #0d6efd;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about-section p {
+  margin-bottom: 18px;
+  font-weight: 500;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-section {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  /* rest of your styles */
+}
+
+/* About section end */
+.about-section {
+  background: linear-gradient(135deg, #ffffff, #eaf6ff);
+}
+
+h1 span {
+  color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: #f1f5f9;
+}
+
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-purple {
+  color: #7952b3; /* Bootstrap purple */
+}
+
+/* Projects section */
+.projects-section {
+  background-color: #f4f9ff;
+  padding: 60px 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card h4 {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.project-card p {
+  color: #444;
+  margin: 10px 0 15px;
+}
+
+.project-card small {
+  color: #666;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* certification */
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.2);
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-subtitle {
+  font-size: 0.85rem;
+}
+
+/* Contact links */
+.contact-section {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  padding: 60px 20px;
+}
+
+.contact-info li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+
+.contact-form .btn-primary {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 40px;
+}
+/* footer */
+footer {
+  background-color: #0a0a0a;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+section {
+  scroll-margin-top: 70px;
+}
