@@ -35,11 +35,18 @@ body {
 /* Hero Section with Background Image */
 .hero-section {
   position: relative;
-  height: 100vh;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("./images/hero.jpg"); /* Replace with your actual image */
   background-size: cover;
   background-position: center 40%;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px;
+  
 }
 
 /* Overlay to darken image */
@@ -55,10 +62,11 @@ body {
 
 /* Text content inside hero */
 .hero-section .hero-content {
-  position: relative;
+  position:relative;
   z-index: 2;
   padding: 0 15px; /* keep small horizontal padding */
-  margin-top: 200px; /* pushes text down by 80px */
+  margin-top: 220px; /* pushes text down by 80px */
+  
 }
 
 .text-highlight {
@@ -138,6 +146,7 @@ h1 span {
 /* Skills Section */
 .skills-section {
   background-color: #f1f5f9;
+  color:#0d6efd;
 }
 
 .skill-card {
@@ -158,6 +167,7 @@ h1 span {
 .projects-section {
   background-color: #f4f9ff;
   padding: 60px 20px;
+  text-align: center;
 }
 
 .project-card {
